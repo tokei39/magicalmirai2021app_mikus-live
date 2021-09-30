@@ -1,0 +1,36 @@
+{
+  "name": "mikus-live",
+  "private": true,
+  "version": "1.0.0",
+  "description": "マジカルミライ2021プログラミングコンテスト応募作品",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "parcel src/index.html --out-dir dev",
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps && cp model/miku.glb docs/",
+    "clean": "rm -rf .cache dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokei39/magicalmirai2021app_mikus-live.git"
+  },
+  "keywords": [
+    "textalive"
+  ],
+  "author": "tokei39",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "@types/three": "^0.132.1",
+    "textalive-app-api": "^0.3.1",
+    "three": "^0.132.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "typescript": "^4.4.3"
+  }
+}

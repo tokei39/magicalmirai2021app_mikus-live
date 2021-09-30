@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>Miku's Live</title>
+
+<link rel="stylesheet" href="index.css" />
+<script src="index.ts" defer></script>
+</head>
+
+<body>
+
+<div id="MainCanvasArea"></div>
+
+<div id="ControlPanel">
+    <div id="AppPlayer"></div>
+    <div id="DetailPanelOpen"></div>
+</div>
+
+<div id="media"></div>
+
+<div id="DetailPanel">
+    <div id="nowSongInfo">
+        <h1>再生中</h1>
+        <p id="songName"></p>
+        <p id="songArtist"></p>
+        <p id="lyricArtist"></p>
+        <p id="songURL"></p>
+    </div>
+    <div id="SongSelectDiv">
+        <h1>選曲</h1>
+        <div id="SongSelect"></div>
+        <form id="RequestSongURLForm">
+            <button type="button" id="RequestSongURLButton">曲読み込み</button> : <input type="url" id=RequestSongURL>
+            <table id="paramSongTable"></table>
+        </form>
+        <form id="AppParameter">
+            <button type="button" id="RequestColorButton">色設定</button> :<br>
+            <table id="paramColorTable"></table>
+        </form>
+    </div>
+    <h1>アプリ情報</h1>
+        <h2>Miku's Live</h2>
+        <h3><a href="https://magicalmirai.com/2021/procon/" target="_blank" rel="noopener noreferrer">初音ミク「マジカルミライ2021」プログラミング・コンテスト</a> 応募作品</h3>
+        <h3>選曲対象：<a href="https://piapro.jp/pages/official_collabo/magical2021_musiccontest/result" target="_blank" rel="noopener noreferrer">初音ミク「マジカルミライ 2021」楽曲コンテスト</a>　採用作品</h3>
+        <div id="copyright">
+            <h2>copyright</h2>
+            <h3>依存ライブラリ</h3>
+                <h4><a href="https://developer.textalive.jp/app/" target="_blank" rel="noopener noreferrer">TextAlive App API</a></h4>
+                <p>
+                    楽曲再生、楽曲情報取得などに利用。
+                </p>
+                <h4><a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a></h4>
+                <p>
+                    3D描画に利用。
+                </p>
+            <h3>3Dオブジェクト</h3>
+                <h4>初音ミク(ファイル名：miku.glb)</h4>
+                    <p>
+                        <a href="https://piapro.jp/license/pcl/summary" target="_blank" rel="noopener noreferrer">ピアプロ・キャラクター・ライセンス</a>に基づいてクリプトン・フューチャー・メディア株式会社のキャラクター「初音ミク」の3Dオブジェクトを作成した。
+                    </p>
+                    <p><a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender</a>を利用してモデルとアニメーションを作成し、glb形式で出力、Three.jsで読み込んで操作。</p>
+                <h4>その他ステージ等</h4>
+                    <p>Three.jsで作成し、操作。</p>
+        </div>
+</div>
+
+</body>
+</html>

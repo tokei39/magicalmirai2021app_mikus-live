@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow: hidden;
+}
+
+#MainCanvasArea {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+}
+#threeCanvas {
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    display: block;
+    background-color: white;
+}
+#LoadingCanvas {
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    display: block;
+    background-color: white;
+}
+
+#media {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    width: calc(80px + 16vmin);
+}
+
+#ControlPanel {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -30px;
+    height: 30px;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    z-index: 3;
+
+    transition-property: bottom;
+    transition-duration: 1s;
+}
+h1 {
+  border-bottom: solid 3px black;
+}
+
+#AppPlayer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#DetailPanelOpen {
+    position:relative;
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+}
+#DetailPanel {
+    position: absolute;
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vw;
+    right: 5vw;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    overflow-y: scroll;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+#RequestSongURL {
+    width: 80%;
+    max-width: 500px;
+}
