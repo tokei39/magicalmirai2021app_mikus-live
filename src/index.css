@@ -32,7 +32,7 @@ html, body {
 
 #media {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
     z-index: 2;
     width: calc(80px + 16vmin);
