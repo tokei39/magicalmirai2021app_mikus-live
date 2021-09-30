@@ -36,7 +36,7 @@
 
 ## ビルド
 
-以下のコマンドで `docs` 以下にビルド済みファイルが生成されます。
+[Node.js](https://nodejs.org/) をインストールしている環境で、以下のコマンドを実行すると、`docs` 以下にビルド済みファイルが生成されます。
 ```sh
 npm install
 npm run build
